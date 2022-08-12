@@ -5,17 +5,28 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.12.1",
+    "@contentful/rich-text-types": "^15.12.1",
+    "bootstrap": "^5.2.0",
     "gatsby": "^4.20.0",
     "gatsby-plugin-image": "^2.20.0",
     "gatsby-plugin-manifest": "^4.20.0",
+    "gatsby-plugin-sass": "^5.20.0",
     "gatsby-plugin-sharp": "^4.20.0",
+    "gatsby-remark-images": "^6.20.0",
+    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-source-contentful": "^7.18.0",
     "gatsby-source-filesystem": "^4.20.0",
+    "gatsby-transformer-remark": "^5.20.0",
     "gatsby-transformer-sharp": "^4.20.0",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.1.0",
+    "sass": "^1.54.4"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "prettier": "^2.7.1"
   },
   "keywords": [
@@ -24,7 +35,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
